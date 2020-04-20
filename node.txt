@@ -1,0 +1,12 @@
+global instead of window
+
+var message = '';
+is same as
+var global.message = '';
+
+
+
+modules -
+ os
+ events
+ http
