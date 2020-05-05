@@ -1,0 +1,190 @@
+{
+  "code": "InvalidTemplateDeployment",
+  "message": "The template deployment failed with multiple errors. Please see details for more information.",
+  "details": [
+    {
+      "code": "RequestDisallowedByPolicy",
+      "target": "machine-inferno665",
+      "message": "Resource 'machine-inferno665' was disallowed by policy. Policy identifiers: '[{\"policyAssignment\":{\"name\":\"webapp\",\"id\":\"/providers/Microsoft.Management/managementGroups/triplecrown2/providers/Microsoft.Authorization/policyAssignments/4a0a4629d22043e6a70a69f9\"},\"policyDefinition\":{\"name\":\"Allowed resource types\",\"id\":\"/providers/Microsoft.Authorization/policyDefinitions/a08ec900-254a-4555-9bf5-e42af04b5c5c\"},\"policySetDefinition\":{\"name\":\"webapp\",\"id\":\"/providers/Microsoft.Management/managementGroups/triplecrown2/providers/Microsoft.Authorization/policySetDefinitions/f06460e7-86f9-42ad-8955-fb55bad92028\"}}]'.",
+      "additionalInfo": [
+        {
+          "type": "PolicyViolation",
+          "info": {
+            "policyDefinitionDisplayName": "Allowed resource types",
+            "policySetDefinitionDisplayName": "webapp",
+            "evaluationDetails": {
+              "evaluatedExpressions": [
+                {
+                  "result": "False",
+                  "expressionKind": "Field",
+                  "expression": "type",
+                  "path": "type",
+                  "expressionValue": "Microsoft.Network/networkInterfaces",
+                  "targetValue": [
+                    "microsoft.resources/resourcegroups",
+                    "microsoft.storage/storageaccounts",
+                    "microsoft.web/sites",
+                    "microsoft.web/serverfarms",
+                    "microsoft.documentdb/databaseaccounts",
+                    "microsoft.insights/components",
+                    "microsoft.keyvault/vaults",
+                    "microsoft.cache/redis",
+                    "microsoft.servicebus/namespaces",
+                    "microsoft.servicebus/namespaces/authorizationrules",
+                    "microsoft.servicebus/namespaces/queues",
+                    "microsoft.servicebus/namespaces/queues/authorizationrules",
+                    "microsoft.servicebus/namespaces/topics",
+                    "microsoft.servicebus/namespaces/topics/authorizationrules",
+                    "microsoft.servicebus/namespaces/topics/subscriptions",
+                    "microsoft.servicebus/namespaces/topics/subscriptions/rules",
+                    "microsoft.cognitiveservices/accounts",
+                    "microsoft.web/sites/slots",
+                    "microsoft.web/sites/slots/instances",
+                    "microsoft.web/sites/slots/metrics",
+                    "microsoft.web/sites/metrics",
+                    "microsoft.web/sites/instances",
+                    "microsoft.web/certificates",
+                    "microsoft.portal/dashboards",
+                    "microsoft.containerregistry/registries",
+                    "microsoft.containerregistry/registries/webhooks",
+                    "microsoft.web/connections",
+                    "microsoft.logic/workflows",
+                    "microsoft.web/customapis",
+                    "microsoft.search/searchservices",
+                    "microsoft.network/trafficmanagerprofiles",
+                    "microsoft.sql/servers",
+                    "microsoft.sql/servers/databases",
+                    "microsoft.signalrservice/signalr",
+                    "microsoft.apimanagement/service",
+                    "microsoft.dbforpostgresql/servers",
+                    "microsoft.dbforpostgresql/serversv2",
+                    "microsoft.web/sites/slots/metricdefinitions",
+                    "microsoft.web/sites/metricdefinitions",
+                    "microsoft.web/serverfarms/workers",
+                    "microsoft.cdn/profiles",
+                    "microsoft.cdn/profiles/endpoints",
+                    "microsoft.network/connections",
+                    "microsoft.network/localnetworkgateways",
+                    "microsoft.network/publicipaddresses",
+                    "microsoft.network/virtualnetworkgateways",
+                    "microsoft.network/virtualnetworks",
+                    "microsoft.network/networksecuritygroups",
+                    "microsoft.relay/namespaces",
+                    "microsoft.datafactory/factories",
+                    "microsoft.machinelearningservices/workspaces",
+                    "microsoft.machinelearningservices/workspaces/computes",
+                    "microsoft.web/staticsites"
+                  ],
+                  "operator": "In"
+                }
+              ]
+            },
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a08ec900-254a-4555-9bf5-e42af04b5c5c",
+            "policySetDefinitionId": "/providers/Microsoft.Management/managementGroups/triplecrown2/providers/Microsoft.Authorization/policySetDefinitions/f06460e7-86f9-42ad-8955-fb55bad92028",
+            "policyDefinitionReferenceId": "8272972042953317437",
+            "policySetDefinitionName": "f06460e7-86f9-42ad-8955-fb55bad92028",
+            "policyDefinitionName": "a08ec900-254a-4555-9bf5-e42af04b5c5c",
+            "policyDefinitionEffect": "deny",
+            "policyAssignmentId": "/providers/Microsoft.Management/managementGroups/triplecrown2/providers/Microsoft.Authorization/policyAssignments/4a0a4629d22043e6a70a69f9",
+            "policyAssignmentName": "4a0a4629d22043e6a70a69f9",
+            "policyAssignmentDisplayName": "webapp",
+            "policyAssignmentScope": "/providers/Microsoft.Management/managementGroups/triplecrown2",
+            "policyAssignmentParameters": {}
+          }
+        }
+      ]
+    },
+    {
+      "code": "RequestDisallowedByPolicy",
+      "target": "machine-inferno",
+      "message": "Resource 'machine-inferno' was disallowed by policy. Policy identifiers: '[{\"policyAssignment\":{\"name\":\"webapp\",\"id\":\"/providers/Microsoft.Management/managementGroups/triplecrown2/providers/Microsoft.Authorization/policyAssignments/4a0a4629d22043e6a70a69f9\"},\"policyDefinition\":{\"name\":\"Allowed resource types\",\"id\":\"/providers/Microsoft.Authorization/policyDefinitions/a08ec900-254a-4555-9bf5-e42af04b5c5c\"},\"policySetDefinition\":{\"name\":\"webapp\",\"id\":\"/providers/Microsoft.Management/managementGroups/triplecrown2/providers/Microsoft.Authorization/policySetDefinitions/f06460e7-86f9-42ad-8955-fb55bad92028\"}}]'.",
+      "additionalInfo": [
+        {
+          "type": "PolicyViolation",
+          "info": {
+            "policyDefinitionDisplayName": "Allowed resource types",
+            "policySetDefinitionDisplayName": "webapp",
+            "evaluationDetails": {
+              "evaluatedExpressions": [
+                {
+                  "result": "False",
+                  "expressionKind": "Field",
+                  "expression": "type",
+                  "path": "type",
+                  "expressionValue": "Microsoft.Compute/virtualMachines",
+                  "targetValue": [
+                    "microsoft.resources/resourcegroups",
+                    "microsoft.storage/storageaccounts",
+                    "microsoft.web/sites",
+                    "microsoft.web/serverfarms",
+                    "microsoft.documentdb/databaseaccounts",
+                    "microsoft.insights/components",
+                    "microsoft.keyvault/vaults",
+                    "microsoft.cache/redis",
+                    "microsoft.servicebus/namespaces",
+                    "microsoft.servicebus/namespaces/authorizationrules",
+                    "microsoft.servicebus/namespaces/queues",
+                    "microsoft.servicebus/namespaces/queues/authorizationrules",
+                    "microsoft.servicebus/namespaces/topics",
+                    "microsoft.servicebus/namespaces/topics/authorizationrules",
+                    "microsoft.servicebus/namespaces/topics/subscriptions",
+                    "microsoft.servicebus/namespaces/topics/subscriptions/rules",
+                    "microsoft.cognitiveservices/accounts",
+                    "microsoft.web/sites/slots",
+                    "microsoft.web/sites/slots/instances",
+                    "microsoft.web/sites/slots/metrics",
+                    "microsoft.web/sites/metrics",
+                    "microsoft.web/sites/instances",
+                    "microsoft.web/certificates",
+                    "microsoft.portal/dashboards",
+                    "microsoft.containerregistry/registries",
+                    "microsoft.containerregistry/registries/webhooks",
+                    "microsoft.web/connections",
+                    "microsoft.logic/workflows",
+                    "microsoft.web/customapis",
+                    "microsoft.search/searchservices",
+                    "microsoft.network/trafficmanagerprofiles",
+                    "microsoft.sql/servers",
+                    "microsoft.sql/servers/databases",
+                    "microsoft.signalrservice/signalr",
+                    "microsoft.apimanagement/service",
+                    "microsoft.dbforpostgresql/servers",
+                    "microsoft.dbforpostgresql/serversv2",
+                    "microsoft.web/sites/slots/metricdefinitions",
+                    "microsoft.web/sites/metricdefinitions",
+                    "microsoft.web/serverfarms/workers",
+                    "microsoft.cdn/profiles",
+                    "microsoft.cdn/profiles/endpoints",
+                    "microsoft.network/connections",
+                    "microsoft.network/localnetworkgateways",
+                    "microsoft.network/publicipaddresses",
+                    "microsoft.network/virtualnetworkgateways",
+                    "microsoft.network/virtualnetworks",
+                    "microsoft.network/networksecuritygroups",
+                    "microsoft.relay/namespaces",
+                    "microsoft.datafactory/factories",
+                    "microsoft.machinelearningservices/workspaces",
+                    "microsoft.machinelearningservices/workspaces/computes",
+                    "microsoft.web/staticsites"
+                  ],
+                  "operator": "In"
+                }
+              ]
+            },
+            "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a08ec900-254a-4555-9bf5-e42af04b5c5c",
+            "policySetDefinitionId": "/providers/Microsoft.Management/managementGroups/triplecrown2/providers/Microsoft.Authorization/policySetDefinitions/f06460e7-86f9-42ad-8955-fb55bad92028",
+            "policyDefinitionReferenceId": "8272972042953317437",
+            "policySetDefinitionName": "f06460e7-86f9-42ad-8955-fb55bad92028",
+            "policyDefinitionName": "a08ec900-254a-4555-9bf5-e42af04b5c5c",
+            "policyDefinitionEffect": "deny",
+            "policyAssignmentId": "/providers/Microsoft.Management/managementGroups/triplecrown2/providers/Microsoft.Authorization/policyAssignments/4a0a4629d22043e6a70a69f9",
+            "policyAssignmentName": "4a0a4629d22043e6a70a69f9",
+            "policyAssignmentDisplayName": "webapp",
+            "policyAssignmentScope": "/providers/Microsoft.Management/managementGroups/triplecrown2",
+            "policyAssignmentParameters": {}
+          }
+        }
+      ]
+    }
+  ]
+}
