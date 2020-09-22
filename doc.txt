@@ -1,0 +1,18 @@
+
+npm install lodash --save
+npm install mocha --save-dev
+
+
+upgrade node to latest version -
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+	Note: after this upgrade, reload all your terminal tabs bcz the path of new node binary is not updated in them, they're still using old node binary
+
+
+Async programming - 
+
+
+Express -
+
+app.get(endpoint, callback)

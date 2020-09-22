@@ -1,9 +1,15 @@
-const express = require ('express');
+const express = require('express')
+const app = express()
+const port = 3000
 
-const app = express();
+app.get('/', (request, response) => {
+    response.send('hello from express!')
+})
 
-app.get('/',function(req,res) {
- res.send('Hello to you , the world looks happy :-)');
-});
+app.listen(port, (err) => {
+    if (err) {
+        console.log(err)
+    }
 
-app.listen(5000,() => console.log(`server started on port 5000`));
+    console.log('server is listening on ',port)
+})
